@@ -68,30 +68,69 @@
 
 \section*{Summary}
 
-In this lab we modified our full adder from the last lab, to make the two bit adder/subtractor in this lab. The only adjustment we had to make to our previous adder was to add two additional XOR gates with new inputs and a mode input (previously Cin). The sum of 
+In this lab we modified our full adder from the last lab, to make the two bit adder/subtractor in this lab. The only adjustment we had to make to our previous adder was to add two additional XOR gates with new inputs and a mode input (previously Cin). 
 
 
 \section*{Q\&A}
 
 1) Why did we use two full adders instead of a half adder and a full adder?
 
-Using the full adder we built in the last lab instead of a half adder and full adder, because it was a simple modifiction 
+We used the 2 full adders we built in the last lab instead of a half adder and full adder, because it was a simple modification. 
 
 2) How many input combinations would it take to exhaustively test the adder/subtractor?
 
+4069
+
 3) Why were the combinations given in the truth table chosen?
 
-4) Do the results from your adder/subtractor match what you would expect from theory? Explain any discrepancies.  
+These values test all the possible combinations in one test. 
+
+4) Do the results from your adder/subtractor match what you would expect from theory? Explain any discrepancies. 
+
+Yes, the results match what I would expect from theory. When you look at the truth table you can see that the last two bits of the subtracted answer match the last two bits of the B inputs 2 compliment. The first bit of the answer is the only different bit, which makes sense because the first bit in the 2 compliment is a sign bit. 
 
 
 \section*{Results}
 
-In this section, put your simulation waveforms, results tables, pictures of hardware, and any other required items.
+\begin{center}
+	
+	\includegraphics[width=0.5\textwidth]{circuit demo page 4}
+	
+	\caption{Circuit Demonstration Page}
+	
+	\includegraphics[width=0.5\textwidth]{schematic}
+	
+	\caption{Subtractor Wiring Diagram and Schematic}
+	
+	\includegraphics[width=0.5\textwidth]{subtractor}
+	
+	\caption{Subtractor}
+	
+\end{center}
 
 
 \section*{Code}
 
-Include all of the code you wrote or modified here.
+\begin{lstlisting}[style=Verilog,
+	caption=Direct Verilog code example,
+	label=code:ex 
+	]
+\begin{center}
+	
+	\includegraphics[width=0.5\textwidth]{circuit demo page 4}
+	
+	\caption{Circuit Demonstration Page}
+	
+	\includegraphics[width=0.5\textwidth]{schematic}
+	
+	\caption{Subtractor Wiring Diagram and Schematic}
+	
+	\includegraphics[width=0.5\textwidth]{subtractor}
+	
+	\caption{Subtractor}
+	
+\end{center}
+\end{lstlisting}
 
 
 \end{document}
